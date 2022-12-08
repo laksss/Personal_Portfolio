@@ -1,0 +1,160 @@
+#paint-container{
+    /* border: red solid thick; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+
+}
+
+
+
+#container-outer{
+    /* border: pink solid thick; */
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#paint1-gif, #paint2-gif, #paint3-gif{
+    height: 800px;
+    transition: all 1s ease-in-out;
+    animation-delay: 1s;
+    width: 950px;
+    z-index: 7;
+
+
+}
+
+#paint1-gif:hover , #paint2-gif:hover , #paint3-gif:hover{
+    height: 750px;
+}
+
+#blob1-gif{
+    position: absolute;
+    left: 60%;
+    top: 50%;
+}
+
+#blob3-gif{
+    position: absolute;
+    top: 0%;
+    width: 800px;
+    z-index:0;
+    /* animation-delay: 1s; */
+}
+
+/* 
+ */
+
+ #tube1-gif, #tube2-gif {
+   /* border: red solid thick ;  */
+   width: 55vw;
+   height: 50vh;
+   animation-duration: 6s;
+   transition: all 1s ease-in-out;
+
+ }
+
+ .paint-container{
+   /* border: pink solid thick; */
+   width: 75vw;
+ }
+
+ #tube1-gif:hover, #tube2-gif:hover {
+  width: 50vw;
+
+ }
+
+
+ @import "compass/css3";
+
+@font-face {
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/Anders.ttf');
+  font-family: test;
+}
+
+.scene {
+  position: relative;
+  height: 100%;
+
+  background: #1d1f2000;
+  padding: 20rem;
+  text-align: center;
+
+   /* background: url('../images/color.jpg') 50% 50% no-repeat fixed;
+  background-size: cover;  */
+}
+
+.magic {
+  z-index: 5;
+  position: absolute;
+  top: calc(50% - 10rem);
+  left: calc(50% - 10rem);
+  width: 10rem;
+  height: 10rem;
+  background: url('../images/code.png') 50% 50% no-repeat fixed;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+#plant1-gif{
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  height:50vh;
+  animation-duration: 3s;
+}
+
+#plant2-gif{
+  position: absolute;
+  top: 0%;
+  left: 75%;
+  /* border: red solid thick ; */
+  height:50vh;
+  animation-duration: 3s;
+
+}
+
+#p1-gif{
+  height:100vh;
+  /* border: red solid thick; */
+  width: 90vw;
+}
+
+#p1-record-gif, #p1-brief-gif{
+  /* border: red solid thick; */
+  height:100vh;
+  transition: all 1s ease-in-out;
+  animation-duration: 5s;
+
+
+}
+
+#p1-brief-gif{
+  animation-duration: 5s;
+}
+
+#p1-record-gif:hover{
+  animation: pulse;
+  animation-duration: 3s;
+}
+
+#p1{
+  /* border: red solid thick; */
+  position: absolute;
+  width: 250px;
+  /* position: absolute;
+  z-index: 1000;
+  top: 40%;
+  left: 18.5%;
+  width: 300px; */
+  height: 30vh;
+  width: 15vw
+}
+/* 
+#project{
+  border: blue solid thick;
+
+} */

@@ -1,0 +1,237 @@
+*{
+font-family: 'acumin pro';
+  cursor: none;
+
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Fira Mono", Consolas, monospace;
+    background-image: url(../images/canvas2.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* background: linear-gradient(135deg, lime, hotpink); */
+    /* background-blend-mode: lighten; */
+    overflow: hidden;
+  }
+  
+
+  #intro-gif{
+      /* border: red solid thick; */
+      width: 50vw;
+  }
+
+  #container{
+      /* border: pink solid thick; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+
+  }
+  /* #button-gif{
+      /* border: red solid thick; */
+      /* position: absolute;
+      top: 60%;
+      left: 35%
+
+    }  */
+    #circularcursor {
+        background-color: #f6f6f6;
+        /* border:1px solid black;     */
+        /* height:40px;
+        width:40px; */
+        height:5vh;
+        width:2.5vw;
+        border-radius:50%;
+        -moz-border-radius:50%;
+        -webkit-border-radius:50%;
+        position: absolute;
+        z-index: 100000;
+        mix-blend-mode: difference;
+
+      }
+
+    /* .cursor {
+        position: fixed;
+      
+        width: 100px;
+        height: 100px;
+      
+        -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='30px' width='30px' viewbox='0 0 30 30'%3E%3Ccircle cx='15' cy='15' r='15' /%3E%3C/svg%3E")
+          no-repeat 50% 50%;
+        mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='30px' width='30px' viewbox='0 0 30 30'%3E%3Ccircle cx='15' cy='15' r='15' fill='%23000' /%3E%3C/svg%3E")
+          no-repeat 50% 50%;
+        -webkit-mask-size: 15%;
+        mask-size: 15%;
+      
+        background-color: #000;
+        border: black solid 2px;
+      
+        transition: transform 0.001s ease-in-out, background-color 0.1s ease;
+      
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+      } */
+      
+
+    #button-gif{
+        /* border: pink solid thick;  */
+        /* width: 300px;
+        position: absolute;
+        left: 50%; */
+        position: relative;
+        width: 20vw;
+        transition: all 1s ease-in-out;
+
+        
+        
+        
+    }
+
+    #button-gif:hover{
+        /* width: 305px;
+         */
+         /* width: vw; */
+         animation: fadeIn paused ;
+         animation: pulse;
+         animation-duration: 2s;
+         animation-direction: alternate;
+    }
+
+    #about-me-gif{
+        /* border: red solid thick; */
+        width: 40vw;
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        transition: all 1s ease-in-out;
+        animation-duration: 3s;
+    }
+
+    #about-me-gif:hover, #projects-gif:hover{
+        cursor: pointer;
+        width: 42vw;
+        /* animation: jello;
+        animation-duration: 1s; */
+
+    }
+
+    #projects-gif{
+        /* border: red solid thick; */
+        width: 40vw;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transition: all 1s ease-in-out;
+        animation-duration: 3s;
+
+
+    }
+
+    #stroke1-gif{
+        /* border: red solid thick; */
+        width: 40vw;
+        position: absolute;
+        top: 65%;
+        left: 5%;
+        animation-duration: 5s;
+
+        
+    }
+    #stroke2-gif{
+        /* border: red solid thick; */
+        width: 40vw;
+        position: absolute;
+        top: 5%;
+        left: 60%;
+        animation-duration: 5s;
+    } 
+    #stroke3-gif{
+        /* border: red solid thick; */
+        width: 50vw;
+        position: absolute;
+        top: -10%;
+        left: 60%;
+    }
+
+
+
+
+
+    #contact{
+        /* border: red solid thick; */
+        width: 40vw;
+        position: absolute;
+        top: 75%;
+        left: 5%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #contact a img{
+        transition: all 1s ease-in-out;
+        width: 9.5vw;
+        height: 18.5vh;
+
+
+
+    }
+
+    #contact a:hover{
+        cursor:pointer;
+        /* width: 20vw; */
+        animation: pulse;
+        animation-duration:3s;
+
+
+    }
+
+    #logo-gif{
+        /* border: rgb(81, 151, 48) solid thick; */
+        /* width: 40vw; */
+        position: absolute;
+        top: 72%;
+        left: 85%;
+        height: 28vh;
+        width: 10vw;
+
+
+    }
+
+    #logo-gif:hover{
+        cursor: pointer;
+    }
+
+
+    
+    #back-gif{
+        /* border: rgb(81, 151, 48) solid thick; */
+        /* width: 40vw; */
+        position: absolute;
+        top: 72%;
+        left: 85%;
+        height: 25vh;
+        width: 11vw;
+
+        
+
+
+    }
+
+    #back-gif:hover{
+        cursor: pointer;
+        
+    }
+
+
+
